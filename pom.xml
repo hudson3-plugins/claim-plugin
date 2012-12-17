@@ -2,9 +2,9 @@
   <modelVersion>4.0.0</modelVersion>
   
   <parent>
-    <groupId>org.jvnet.hudson.plugins</groupId>
-    <artifactId>plugin</artifactId>
-    <version>1.347</version>
+    <groupId>org.eclipse.hudson.plugins</groupId>
+    <artifactId>hudson-plugin-parent</artifactId>
+    <version>3.0.0-RC4</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
 
@@ -17,19 +17,22 @@
     <finalName>${project.artifactId}</finalName>
   </build>
 
-    <repositories>
-        <repository>
-            <id>repo.jenkins-ci.org</id>
-            <url>http://repo.jenkins-ci.org/public/</url>
-        </repository>
-    </repositories>
+  <developers>
+    <developer>
+      <id>schristou88</id>
+      <name>Steven Christou</name>
+      <email>schristou88@gmail.com</email>
+      <roles>
+          <role>
+              Maintainer
+          </role>
+      </roles>
+    </developer>
+  </developers>
 
-    <pluginRepositories>
-        <pluginRepository>
-            <id>repo.jenkins-ci.org</id>
-            <url>http://repo.jenkins-ci.org/public/</url>
-        </pluginRepository>
-    </pluginRepositories>
-</project>  
-  
-
+  <scm>
+    <connection>scm:git:git://github.com/hudson3-plugins/claim-plugin.git</connection>
+    <developerConnection>scm:git:git@github.com:hudson3-plugins/claim-plugin.git</developerConnection>
+    <url>https://github.com/hudson3-plugins/claim-plugin</url>
+  </scm>
+</project>
